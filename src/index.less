@@ -1,0 +1,29 @@
+
+@fn: ~`px2rem = function(px, base){return base?(px/base*10)+'rem':(px/75)+'rem'}`;
+
+.px2rem(@px, @base: 750) {
+  @rem: (@px / @base * 20) * 1rem;
+}
+
+.font(@font-size, @color: #333, @text-align: left) when (ispixel(@font-size)), (iscolor(@color)), (iskeyword(@text-align)) {
+  font-size: @font-size;
+  color: @color;
+  text-align: @text-align;
+}
+
+// .font(@size) {
+//   font-size: @size;
+//   [data-dpr="2"] & {
+//     font-size: @size * 2;
+//   }
+//   [data-dpr="3"] & {
+//     font-size: @size * 3;
+//   }
+// }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background:#9bb;
+}

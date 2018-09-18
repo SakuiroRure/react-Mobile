@@ -1,0 +1,156 @@
+@import (reference) "../../style/mixin.less";
+#edituser_container{
+    height:100vh;
+    font-family: "yahei";
+    background:#f8f8f8;
+    text-align:center;
+    .am-navbar{
+        color:#fff;
+        background:@base;
+        position: relative;
+        padding:~`px2rem(45)` 0;
+        width:100vw;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 999;
+        .am-navbar-title{
+            span{
+                color:#fff;
+                font-weight:bold;
+            }
+        }
+        .icons{
+            position: absolute;
+            right:~`px2rem(20)`;
+            background:rgba(50,50,50,.2);
+            padding:~`px2rem(4)` ~`px2rem(16)`;
+            border-radius: ~`px2rem(20)`;
+            i{
+                .font(14px);
+                color:#fff;
+                padding: 0 ~`px2rem(14)`;
+                margin:~`px2rem(10)` 0;
+            }
+            i:first-child{
+                border-right:1px solid #fff;
+            }
+        }
+    }
+    main{
+        height:100vh;
+        padding-top:~`px2rem(90)`;
+        padding-bottom:~`px2rem(100)`;
+        overflow: hidden scroll;
+        .head{
+            text-align: left;
+            height:~`px2rem(226)`;
+            padding:~`px2rem(40)` ~`px2rem(28)`;
+            margin-bottom:~`px2rem(20)`;
+            background:#fff;
+            position: relative;
+            img{
+                width:~`px2rem(150)`;
+                height:~`px2rem(150)`;
+                border-radius: 50%;
+                margin-left:~`px2rem(14)`;
+            }
+            input{
+                opacity: 0;
+                position: absolute;
+                top:~`px2rem(90)`;
+                right:~`px2rem(40)`;
+                width:~`px2rem(160)`;
+                height:~`px2rem(48)`;
+                z-index: 999;
+            }
+            button{
+                position: absolute;
+                top:~`px2rem(90)`;
+                right:~`px2rem(40)`;
+                width:~`px2rem(160)`;
+                height:~`px2rem(48)`;
+                border: 1px solid @base;
+                border-radius: ~`px2rem(6)`;
+                background:#fff;
+                color:@base;
+                opacity: .8;
+            }
+        }
+        .content{
+            section{
+                background:#fff;
+                line-height:~`px2rem(105)`;
+                text-align: left;
+                label{
+                    display: inline-block;
+                    margin:0 ~`px2rem(50)`;
+                    border-bottom:1px solid #e7e7e7;
+                    width:~`px2rem(650)`;
+                    height:100%;
+                    span{
+                    margin-right:~`px2rem(30)`;
+                    }
+                    input{
+                        border:0 none;
+                        width:~`px2rem(400)`;
+                        border-radius: ~`px2rem(6)`;
+                        padding-left:~`px2rem(20)`; 
+                    }
+                    textarea{
+                        background:#f4f4f4;
+                    }
+                } 
+                .address{
+                    >div{
+                        display: inline-block;
+                        margin-left:~`px2rem(18)`;
+                    }
+                }
+                .welcome{
+                    line-height:~`px2rem(30)`;
+                    padding-top:~`px2rem(30)`;
+                    border-bottom:0 none;
+                    .am-textarea-has-count{
+                        padding:0;
+                        margin-top:~`px2rem(6)`;
+                        textarea{
+                            border-radius: ~`px2rem(10)`;
+                            .font(13px);
+                            padding:~`px2rem(20)`;
+                        }
+                        .am-textarea-count{
+                            bottom:~`px2rem(30)`;
+                        }
+                    }
+                }
+                .isOpen{
+                    position: relative;
+                    .am-switch{
+                        position: absolute;
+                        right:~`px2rem(0)`;
+                        top:~`px2rem(10)`;
+                        width:~`px2rem(100)`;
+                        margin:0;
+                        margin-top:~`px2rem(10)`;
+                        border-bottom:0 none;
+                    }
+                }
+            } 
+            .save{
+                button{
+                    .font(18px);
+                    width:~`px2rem(550)`;
+                    text-align: center;
+                    background:@base;
+                    padding:~`px2rem(30)` ~`px2rem(20)`;
+                    color:#fff;
+                    font-weight:bold;
+                    border:0 none;
+                    border-radius: ~`px2rem(6)`;
+                    margin:~`px2rem(40)` ~`px2rem(100)`;
+                }
+            }  
+        }
+    }
+}

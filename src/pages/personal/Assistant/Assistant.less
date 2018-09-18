@@ -1,0 +1,82 @@
+@import (reference) "../../../style/mixin.less";
+#Assistant_container{
+    height:100vh;
+    font-family: "yahei";
+    background:#fff;
+    text-align:center;
+    .am-navbar{
+        width:100vw;
+        color:#fff;
+        background:@base;
+        position: fixed;
+        left:0;
+        top:0;
+        padding:~`px2rem(45)` 0;
+        .am-navbar-title{
+            span{
+                color:#fff;
+                font-weight:bold;
+            }
+        }
+        .icons{
+            position: absolute;
+            right:~`px2rem(20)`;
+            background:rgba(50,50,50,.2);
+            padding:~`px2rem(4)` ~`px2rem(16)`;
+            border-radius: ~`px2rem(20)`;
+            i{
+                .font(14px);
+                color:#fff;
+                padding: 0 ~`px2rem(14)`;
+                margin:~`px2rem(10)` 0;
+            }
+            i:first-child{
+                border-right:1px solid #fff;
+            }
+        }
+    }
+    main{
+        height:100vh;
+        padding-top:~`px2rem(90)`;
+        overflow: hidden scroll;
+        background:#fff;
+        .am-tabs{
+            height:auto;
+            .am-tabs-default-bar-content{
+                padding:~`px2rem(8)` 0;
+            }
+            .am-tabs-default-bar-tab-active{
+                color:#c31f9b;
+            }
+            .am-tabs-default-bar-underline{
+                border:0 none;
+                border-bottom:1px solid #c31f9b;
+            }
+            .list{
+                section{
+                    display: flex;
+                    border-bottom:6px solid #f3f4f5;
+                    .sec{
+                        flex:1;
+                        margin:~`px2rem(40)`;
+                        margin-bottom:~`px2rem(72)`;
+                        img{
+                            width:~`px2rem(112)`;
+                        }
+                        p{
+                            .font(14px);
+                            margin-top:~`px2rem(18)`;
+                            font-weight: bold;
+                        }
+                        span{
+                            .font(15px);
+                        }
+                    }
+                }
+                section:last-child{
+                    border-bottom:0 none;
+                }
+            }
+        }
+    }
+}

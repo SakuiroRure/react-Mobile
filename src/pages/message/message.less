@@ -1,0 +1,81 @@
+@import (reference) "../../style/mixin.less";
+#message_container{
+    height:100vh;
+    font-family: "yahei";
+    background:#fff;
+    text-align:center;
+    .am-navbar{
+        color:#fff;
+        background:#c31f9b;
+        position: relative;
+        padding:~`px2rem(45)` 0;
+        .am-navbar-title{
+            span{
+                color:#fff;
+                font-weight:bold;
+            }
+        }
+        .icons{
+            position: absolute;
+            right:~`px2rem(20)`;
+            background:rgba(50,50,50,.2);
+            padding:~`px2rem(4)` ~`px2rem(16)`;
+            border-radius: ~`px2rem(20)`;
+            i{
+                .font(14px);
+                color:#fff;
+                padding: 0 ~`px2rem(14)`;
+                margin:~`px2rem(10)` 0;
+            }
+            i:first-child{
+                border-right:1px solid #fff;
+            }
+        }
+    }
+    .list{
+        padding:~`px2rem(36)` ~`px2rem(42)`;
+        padding-right:~`px2rem(22)`;
+        .actionList{
+            text-align: left;
+            margin-bottom:~`px2rem(54)`;
+            img{
+                width:~`px2rem(100)`;
+                height:~`px2rem(100)`;
+                border-radius: 50%;
+                vertical-align: middle;
+                margin-right:~`px2rem(20)`;
+            }
+            .actionDetail{
+                width:~`px2rem(550)`;
+                display: inline-block;
+                vertical-align: sub;
+                text-align: left;
+                position: relative;
+                top:~`px2rem(18)`;
+                p{
+                    .font(16px);
+                    font-weight:bold;
+                    margin-bottom:~`px2rem(12)`;
+                }
+                .comment{
+                    color:#878787;
+                    display: inline-block;
+                    width:~`px2rem(420)`;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .count{
+                    .font(14px);
+                    color:#878787;
+                    position: absolute;
+                    top:~`px2rem(22)`;
+                    right:~`px2rem(0)`;
+                    i{
+                        margin-left:~`px2rem(14)`;
+                    }
+                }
+            }
+        }
+    }
+}

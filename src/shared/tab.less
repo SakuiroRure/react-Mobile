@@ -1,0 +1,29 @@
+@import (reference) "../style/mixin.less";
+#tab_contain{
+    .font(12px);
+    width:100vw;
+    background:#fff;
+    padding:~`px2rem(12)` 0;
+    position: fixed;
+    left:0;
+    bottom:0;
+    section{
+        width:25%;
+        display: inline-block;
+        text-align: center;
+        img{
+            height:~`px2rem(40)`;
+            margin-bottom:~`px2rem(10)`;
+        }
+        span{
+            display: block;
+            color:#999;
+        }
+    }
+    .active{
+        color:#c31f9b;
+        span{
+            color:#c31f9b;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@import (reference) "../../../style/mixin.less";
+#qrcode_container{
+    height:100vh;
+    font-family: "yahei";
+    background:#fff;
+    text-align:center;
+    .am-navbar{
+        width:100vw;
+        color:#fff;
+        background:@base;
+        position: fixed;
+        left:0;
+        top:0;
+        padding:~`px2rem(45)` 0;
+        .am-navbar-title{
+            span{
+                color:#fff;
+                font-weight:bold;
+            }
+        }
+        .icons{
+            position: absolute;
+            right:~`px2rem(20)`;
+            background:rgba(50,50,50,.2);
+            padding:~`px2rem(4)` ~`px2rem(16)`;
+            border-radius: ~`px2rem(20)`;
+            i{
+                .font(14px);
+                color:#fff;
+                padding: 0 ~`px2rem(14)`;
+                margin:~`px2rem(10)` 0;
+            }
+            i:first-child{
+                border-right:1px solid #fff;
+            }
+        }
+    }
+    main{
+        height:100vh;
+        padding-top:~`px2rem(90)`;
+        padding-bottom:~`px2rem(100)`;
+        overflow: hidden scroll;
+        background:#f3f4f5;
+        .code{
+            position: absolute;
+            left:50%;
+            top:~`px2rem(210)`;
+            transform: translateX(-50%);
+            width:~`px2rem(650)`;
+            height:~`px2rem(900)`;
+            border-radius: ~`px2rem(22)`;
+            background:#fff;
+            text-align: center;
+            h4{
+                .font(18px);
+                text-align: center;
+                font-weight: bold;
+                margin:~`px2rem(60)` auto ~`px2rem(40)`;
+            }
+            h5{
+                .font(16px);
+                text-align: center;
+                font-weight: bold;
+                margin-bottom:~`px2rem(70)`;
+            }
+            canvas{
+                width:~`px2rem(300)`!important;
+                height:~`px2rem(300)`!important;
+                // transform: scale(1.2);
+                transform-origin: top center;
+            }
+            p{
+                .font(18px);
+                text-align: center;
+                margin:~`px2rem(50)` auto ~`px2rem(60)`;
+            }
+            span{
+                display: block;
+                line-height: ~`px2rem(48)`;
+            }
+        }
+    }
+}
